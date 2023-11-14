@@ -1126,3 +1126,28 @@ img {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 428px) {
+  .container {
+    max-width: 427;
+    padding-inline: 0;
+  }
+  .feature-list {
+    text-wrap: wrap;
+  }
+  .head_description {
+    text-wrap: wrap;
+    font-size: 16px;
+  }
+  .head_tertiary {
+    font-weight: 300;
+    font-size: 24px;
+    margin: auto;
+  }
+  .list-first {
+    width: 320px;
+  }
+  .header_secondary {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

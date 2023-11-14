@@ -1155,7 +1155,7 @@ img {
     margin: auto;
   }
   .list-first {
-    width: 320px;
+    width: calc(100vw - 16px);
   }
   .header_secondary {
     font-size: 24px;
@@ -1173,6 +1173,12 @@ img {
   .display {
     justify-content: space-between;
     margin: 0 16px;
+  }
+  .menu-container {
+    padding-left: 10px;
+  }
+  .modal-window {
+    width: 90vw;
   }
 }
 @media (min-device-pixel-ratio: 2),

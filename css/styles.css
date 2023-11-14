@@ -17,7 +17,11 @@
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 428px;
   padding-inline: 16px;
@@ -1128,8 +1132,8 @@ img {
 }
 @media screen and (max-width: 428px) {
   .container {
-    max-width: 427;
     padding-inline: 0;
+    max-width: 320px;
   }
   .feature-list {
     text-wrap: wrap;
@@ -1149,5 +1153,43 @@ img {
   .header_secondary {
     font-size: 24px;
     font-weight: 500;
+  }
+  .footer-email-input {
+    max-width: 350px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: 1158px) {
+  .first_section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: 768px) {
+  .first_section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg768@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first_section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg@2x.jpg);
   }
 }

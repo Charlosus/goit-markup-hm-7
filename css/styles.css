@@ -20,7 +20,7 @@
 
 .container {
   width: 428px;
-  padding-inline: 15px;
+  padding-inline: 16px;
   margin-inline: auto;
 }
 .first_container {
@@ -113,7 +113,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--Text-color);
   display: inline-block;
-  padding: 24px 0 24px;
 }
 .contact:hover {
   color: var(--Pressed_state-color);
@@ -935,4 +934,121 @@ img {
 }
 .mobile-list {
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+  .container {
+    width: 768px;
+  }
+  .navigation {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+  }
+  .address {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-self: center;
+  }
+  .contact {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    letter-spacing: 0.48px;
+    display: inline-block;
+  }
+  .addres {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .first_section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+    max-width: 768px;
+  }
+  .effective {
+    font-size: 56px;
+    letter-spacing: 1.12px;
+    line-height: 60px;
+  }
+  .first_container {
+    gap: 36px;
+  }
+  .list-first {
+    display: flex;
+
+    width: calc((100% - 24px) / 2);
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .feature-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .head_description {
+    font-size: 16px;
+  }
+  .workers_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .customers-list {
+    gap: 24px;
+    justify-content: center;
+  }
+  .customers-item {
+    width: 168px;
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 108px;
+  }
+  .footer-header {
+    text-align: left;
+  }
+  .footer-subscribe-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .email-input-footer {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .social-network-links {
+    justify-content: left;
+  }
+  .newsletter-email-label {
+    width: 264px;
+  }
+  .footer-email-input {
+    width: 264px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
 }
